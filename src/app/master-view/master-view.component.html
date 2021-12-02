@@ -1,0 +1,38 @@
+<igx-navbar class="navigation-bar">
+  <button igxButton="icon" type="icon" [disabled]="false" igxNavbarAction>
+    <igx-icon>menu</igx-icon>
+  </button>
+  <div igxNavbarTitle>Screen Title</div>
+  <button igxButton="icon" type="icon" [disabled]="false">
+    <igx-icon>search</igx-icon>
+  </button>
+  <button igxButton="icon" type="icon" [disabled]="false">
+    <igx-icon>favorite</igx-icon>
+  </button>
+  <button igxButton="icon" type="icon" [disabled]="false">
+    <igx-icon>more_vert</igx-icon>
+  </button>
+</igx-navbar>
+<igx-card type="outlined" *ngFor="let item of northwindCategories" class="card">
+  <igx-card-header>
+    <h3 igxCardHeaderTitle>{{ item.name }}</h3>
+    <h5 igxCardHeaderSubtitle>{{ item.description }}</h5>
+  </igx-card-header>
+  <igx-card-content class="content">
+    <p class="text"></p>
+  </igx-card-content>
+  <igx-card-actions class="actions">
+    <button igxButton="flat" [disabled]="false" class="button">
+      <span>Button</span>
+    </button>
+    <button igxButton="icon" type="icon" [disabled]="false">
+      <igx-icon>favorite</igx-icon>
+    </button>
+    <button igxButton="icon" type="icon" [disabled]="false">
+      <igx-icon>bookmark</igx-icon>
+    </button>
+    <button igxButton="icon" type="icon" [disabled]="false">
+      <igx-icon>share</igx-icon>
+    </button>
+  </igx-card-actions>
+</igx-card>
